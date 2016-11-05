@@ -1,0 +1,19 @@
+version: '2'
+services:
+  web:
+    image: debian:jessie
+    volumes:
+      - .:/var/www
+  drupal:
+    build: docker/drupal
+    ports:
+      - 80
+    volumes_from:
+      - web
+  db:
+    image: mariadb
+    environment:
+      MYSQL_USER: drupal
+      MYSQL_PASSWORD: drupal
+      MYSQL_DATABASE: drupal
+      MYSQL_ROOT_PASSWORD: root
