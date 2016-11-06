@@ -4,16 +4,21 @@ services:
     image: debian:jessie
     volumes:
       - .:/var/www
-  drupal:
+  drupal8:
     build: docker/drupal
     ports:
       - 80
     volumes_from:
       - web
+  drupal7:
+    image: drupal:7
+    ports:
+      - 80
   db:
     image: mariadb
     environment:
       MYSQL_USER: drupal
       MYSQL_PASSWORD: drupal
-      MYSQL_DATABASE: drupal
       MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./docker/mariadb/entrypoint:/docker-entrypoint-initdb.d

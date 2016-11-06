@@ -1,0 +1,5 @@
+CREATE DATABASE drupal7;
+CREATE DATABASE drupal8;
+GRANT ALL PRIVILEGES ON drupal7.* TO 'drupal'@'%';
+GRANT ALL PRIVILEGES ON drupal8.* TO 'drupal'@'%';
+FLUSH PRIVILEGES;
