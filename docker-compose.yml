@@ -22,3 +22,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
     volumes:
       - ./docker/mariadb/entrypoint:/docker-entrypoint-initdb.d
+  drush:
+    build: docker/drush
+    volumes:
+      - .:/app
