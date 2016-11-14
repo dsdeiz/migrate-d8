@@ -17,6 +17,104 @@
         <section>
           <h1>Migrate in Drupal 8</h1>
         </section>
+
+        <section>
+          <h2>About Me</h2>
+          <p>Drupal Developer in Promet Source</p>
+          <p>Github: <a href="https://github.com/dsdeiz">@dsdeiz</p>
+          <p>Drupal: <a href="https://drupal.org/u/dsdeiz">@dsdeiz</a></p>
+        </section>
+
+        <section>
+          <h2>Introduction to Migrate</h2>
+        </section>
+
+        <section>
+          <h3>What is Migrate?</h3>
+          <p>Provides a framework for migrating complex data from a source (xml, json, sql) to a Drupal site.</p>
+          <p>Feeds can be used for simple migrations.</p>
+        </section>
+
+        <section>
+          <h3>History of Migrate</h3>
+          <h4>Drupal 7</h4>
+          <ul>
+            <li>Drush support</li>
+            <li>Mature (built-in support for csv, sql, xml, etc)</li>
+            <li>Drupal-to-Drupal migration</li>
+            <li>Migrate Extras</li>
+            <li>Wordpress, TYPO3, etc</li>
+          </ul>
+          <h4>Drupal 8</h4>
+          <ul>
+            <li>Provides upgrade path from Drupal 6/7 to 8</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Status of Migrate</h3>
+          <ul>
+            <li>Still considered experimental</li>
+            <li>No support for basic sources</li>
+            <li>No Drush support</li>
+            <li>Various process plugins</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Contributed Modules for Migrate</h3>
+          <ul>
+            <li>Migrate Tools</li>
+            <li>Migrate Plus</li>
+            <li>Migrate Source CSV</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Migrate Usage</h2>
+        </section>
+
+        <section>
+          <h3>Migrate Drupal</h3>
+          <p>Migrate an existing Drupal 6/7 site to Drupal 8 using the UI provided by Migrate Drupal</p>
+        </section>
+
+        <section>
+          <h4>Migrate Drupal UI</h4>
+          <img class="stretch" src="./images/migrate-drupal.png" />
+        </section>
+
+        <section>
+          <h4>Migrate Upgrade</h4>
+          <pre><code class="hljs" data-trim>drush migrate-upgrade \
+--legacy-db-url=mysql://drupal:drupal@db/drupal7</code></pre>
+          <pre><code class="hljs" data-trim>drush migrate-upgrade-rollback</code></pre>
+        </section>
+
+        <section>
+          <h3>Migrate</h3>
+          <p>Use YAML files for configuration.</p>
+          <ul>
+            <li class="fragment">Source</li>
+            <li class="fragment">Destination</li>
+            <li class="fragment">Process</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Source</h4>
+          <pre><code class="hljs" data-trim>
+id: test_migration
+label: Test migration
+source:
+  plugin: SOME_PLUGIN
+  # Plugin configurations.
+          </code></pre>
+        </section>
+
+        <section>
+          <h4>Destination</h4>
+        </section>
       </div>
     </div>
 
