@@ -26,3 +26,7 @@ services:
     build: docker/drush
     volumes:
       - .:/app
+  adminer:
+    build: docker/adminer
+    ports:
+      - 80
