@@ -82,25 +82,28 @@ insert into content (id, author, title, body) values (20, 11, 'duis aliquam conv
 
 create table authors (
   id INT,
-  name VARCHAR(50)
+  name VARCHAR(50),
+  email VARCHAR(50)
 );
-insert into authors (id, name) values (1, 'emoore0');
-insert into authors (id, name) values (2, 'apatterson1');
-insert into authors (id, name) values (3, 'jweaver2');
-insert into authors (id, name) values (4, 'eevans3');
-insert into authors (id, name) values (5, 'cwarren4');
-insert into authors (id, name) values (6, 'hbrooks5');
-insert into authors (id, name) values (7, 'redwards6');
-insert into authors (id, name) values (8, 'cwhite7');
-insert into authors (id, name) values (9, 'solson8');
-insert into authors (id, name) values (10, 'ggordon9');
-insert into authors (id, name) values (11, 'grobinsona');
-insert into authors (id, name) values (12, 'jbennettb');
-insert into authors (id, name) values (13, 'dstewartc');
-insert into authors (id, name) values (14, 'rhendersond');
-insert into authors (id, name) values (15, 'dgreene');
-insert into authors (id, name) values (16, 'jfoxf');
-insert into authors (id, name) values (17, 'lbradleyg');
-insert into authors (id, name) values (18, 'cwheelerh');
-insert into authors (id, name) values (19, 'gbishopi');
-insert into authors (id, name) values (20, 'jsimsj');
+insert into authors (id, name, email) values (1, 'wrose0', 'rfowler0@harvard.edu');
+insert into authors (id, name, email) values (2, 'jdaniels1', 'kortiz1@mashable.com');
+insert into authors (id, name, email) values (3, 'rvasquez2', 'mjohnson2@discovery.com');
+insert into authors (id, name, email) values (4, 'lburke3', 'jharper3@time.com');
+insert into authors (id, name, email) values (5, 'gpierce4', 'jlarson4@goodreads.com');
+insert into authors (id, name, email) values (6, 'sbishop5', 'jbishop5@ustream.tv');
+insert into authors (id, name, email) values (7, 'vcollins6', 'dmills6@cargocollective.com');
+insert into authors (id, name, email) values (8, 'mromero7', 'bberry7@sciencedaily.com');
+insert into authors (id, name, email) values (9, 'dparker8', 'jburke8@bbb.org');
+insert into authors (id, name, email) values (10, 'apeterson9', 'dphillips9@feedburner.com');
+insert into authors (id, name, email) values (11, 'ddavisa', 'tcunninghama@kickstarter.com');
+insert into authors (id, name, email) values (12, 'rcoxb', 'mmeyerb@simplemachines.org');
+insert into authors (id, name, email) values (13, 'jwelchc', 'cbutlerc@nsw.gov.au');
+insert into authors (id, name, email) values (14, 'sfoxd', 'dperryd@goo.gl');
+insert into authors (id, name, email) values (15, 'waustine', 'jholmese@jugem.jp');
+insert into authors (id, name, email) values (16, 'awilliamsf', 'tsandersf@dedecms.com');
+insert into authors (id, name, email) values (17, 'rhanseng', 'bevansg@tuttocitta.it');
+insert into authors (id, name, email) values (18, 'hsimpsonh', 'lharperh@goo.gl');
+insert into authors (id, name, email) values (19, 'ffisheri', 'dgarciai@weibo.com');
+insert into authors (id, name, email) values (20, 'jortizj', 'jgonzalezj@elpais.com');
+insert into authors (id, name, email) values (21, 'test', 'test@example.com');
+insert into authors (id, name, email) values (22, 'test', 'test1@example.com');
