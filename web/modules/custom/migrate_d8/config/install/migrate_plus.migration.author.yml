@@ -1,0 +1,25 @@
+id: author
+label: Author
+source:
+  plugin: author
+destination:
+  plugin: entity:user
+process:
+  name:
+    plugin: dedupe_entity
+    source: name
+    entity_type: user
+    field: name
+    postfix: _
+  pass:
+    plugin: default_value
+    default_value: changeme
+  mail: email
+  init: email
+  status:
+    plugin: default_value
+    default_value: 1
+  roles:
+    plugin: default_value
+    default_value: 2
+migration_dependencies: {}

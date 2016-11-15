@@ -1,0 +1,6 @@
+name: Migrate D8
+description: 'Example migration.'
+core: 8.x
+type: module
+dependencies:
+  - migrate_plus
